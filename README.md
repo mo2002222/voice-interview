@@ -21,6 +21,9 @@ It helps developers practice technical interviews, improve their answers, and ga
 > ⚠️ The AI interviewer is not fully active yet (see note below)
 
 👉 Live Demo: *[(https://voice-interview-hazel.vercel.app/)]*
+<p align="center">
+  <img src="./screenshots/Screenshot (192).png" width="80%" />
+</p>
 👉 ![Home](./screenshots/Screenshot (192).png)
 ![Interviews](./screenshots/Screenshot (193).png)
 ![Interviews](./screenshots/Screenshot (194).png)
