@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 PrepWise – AI Mock Interview Platform
 
-## Getting Started
+PrepWise is a full-stack web application designed to simulate real interview experiences using AI.
+It helps developers practice technical interviews, improve their answers, and gain confidence.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+* 🎯 Simulated technical & mixed interviews
+* 🎤 Voice-based interview experience (AI-ready)
+* 🧠 AI-powered feedback system *(architecture ready)*
+* 📊 Interview tracking & history
+* ⚡ Clean and modern UI/UX
+* 🔐 Authentication & backend powered by Firebase
+
+---
+
+## 🧪 Demo
+
+> ⚠️ The AI interviewer is not fully active yet (see note below)
+
+👉 Live Demo: *[(https://voice-interview-hazel.vercel.app/)]*
+👉 ![Home](./screenshots/Screenshot (192).png)
+![Interviews](./screenshots/Screenshot (193).png)
+![Interviews](./screenshots/Screenshot (194).png)
+![Interviews](./screenshots/Screenshot (195).png)
+
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* Next.js 16
+* React 19
+* TypeScript
+* TailwindCSS + shadcn/ui
+
+**Backend & Services**
+
+* Firebase (Auth + Database)
+* Firebase Admin
+
+**AI & Voice (Prepared)**
+
+* AI SDK
+* Google AI SDK
+* Vapi (voice AI)
+
+---
+
+## ⚠️ Important Note About AI
+
+The AI interviewer and feedback system are **fully implemented at the architectural level**, but not currently active.
+
+This is because most AI APIs (LLMs & voice services) require paid access, and I currently don’t have the budget to enable them.
+
+However, the project is built to allow **seamless integration** once API access is available.
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+ ├── (auth)/
+ ├── (root)/
+ │    ├── interview/
+ │    ├── page.tsx
+ │
+components/
+lib/
+firebase/
+types/
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/prepwise.git
+cd prepwise
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Setup environment variables
+
+Create a `.env.local` file:
+
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+```
+
+---
+
+### 4. Run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is fully deployable on **Vercel**.
 
-## Learn More
+Make sure to add the environment variables in Vercel dashboard before deploying.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* 🤖 Enable AI interviewer (LLM integration)
+* 🎙️ Real-time voice conversation
+* 📈 Advanced feedback & scoring system
+* 🧑‍💼 Role-specific interview paths
+* 🌍 Multi-language support
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions, suggestions, and feedback are welcome!
+
+---
+
+## 📬 Contact
+
+If you’d like to collaborate or give feedback, feel free to reach out.
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ — it really helps!
